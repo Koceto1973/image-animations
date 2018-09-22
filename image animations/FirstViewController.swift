@@ -22,11 +22,10 @@ class FirstViewController: UIViewController {
     @IBAction func Next(_ sender: Any) {
         if counter < 45 {
             counter += 1
-            imageView.image = UIImage(named: "frame_\(counter)_delay-0.07s.png")
         } else {
             counter = 2
-            imageView.image = UIImage(named: "frame_\(counter)_delay-0.07s.png")
         }
+        imageView.image = UIImage(named: "frame_\(counter)_delay-0.07s.png")
         
     }
     
